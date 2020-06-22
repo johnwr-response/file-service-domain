@@ -5,7 +5,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.sql.Timestamp;
+import java.time.LocalDateTime;
 import java.util.UUID;
 
 @Data
@@ -15,8 +15,8 @@ import java.util.UUID;
 public class FileItemDto {
     private UUID id;
     private Long version;
-    private Timestamp createdDate;
-    private Timestamp lastModifiedDate;
+    private LocalDateTime createdDate;
+    private LocalDateTime lastModifiedDate;
     private UUID fileStorePathId;
     private String filename;
     private Long size;
