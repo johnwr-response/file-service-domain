@@ -6,6 +6,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.io.File;
+import java.time.LocalDateTime;
 import java.util.UUID;
 
 @Data
@@ -19,6 +20,7 @@ public class FileStoreDto {
     private String baseFolder;
     private String nickname;
     private String mountPoint;
+    private LocalDateTime latestRefresh;
     public String getLocalBaseUri() {
         return File.separator + File.separator + baseServer + File.separator + baseShare + File.separator + baseFolder;
     }

@@ -11,6 +11,7 @@ import lombok.NoArgsConstructor;
 @Builder
 public class FileStoreRequestDto {
     private FileStoreRequestTypeDto fileStoreRequestType;
+    private WalkerJobDto walkerJobDto;
     private FileStoreDto fileStore;
     private FilePathDto filePath;
     private FileItemDto fileItem;
