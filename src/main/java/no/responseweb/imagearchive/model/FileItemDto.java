@@ -1,5 +1,6 @@
 package no.responseweb.imagearchive.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -22,4 +23,6 @@ public class FileItemDto {
     private Long size;
     private boolean locallyVisited = false;
     private boolean locallyChanged = false;
+    @JsonIgnore
+    private byte[] thumbnail;
 }
