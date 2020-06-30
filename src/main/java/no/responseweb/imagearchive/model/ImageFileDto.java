@@ -11,11 +11,6 @@ import java.util.UUID;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class FileItemTagLinkDto {
+public class ImageFileDto {
     private UUID id;
-    private UUID fileItemId;
-    private UUID imageFileId;
-    private UUID fixedTagEntityId;
-    private UUID fixedTagObjectContextId;
-    private UUID tagId;
 }
