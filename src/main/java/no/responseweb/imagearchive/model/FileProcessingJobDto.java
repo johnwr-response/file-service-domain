@@ -5,12 +5,12 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.UUID;
-
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class ImageFileDto {
-    private UUID id;
+public class FileProcessingJobDto {
+    private FileStoreRequestTypeDto fileStoreRequestType;
+    private FileItemDto fileItemDto;
+    private FileProcessingJobForwarderConfig config;
 }

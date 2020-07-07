@@ -21,7 +21,7 @@ public class FileItemDto {
     private UUID fileStorePathId;
     private String filename;
     private Long size;
-    private UUID imageFileId;
+    private UUID fileEntityId;
     @JsonIgnore
     private byte[] thumbnail;
     private boolean locallyVisited = false;

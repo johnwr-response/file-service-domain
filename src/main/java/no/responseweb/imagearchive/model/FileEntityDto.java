@@ -11,6 +11,7 @@ import java.util.UUID;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class ImageFaceDetectionJobDto {
-    private UUID fileItemId;
+public class FileEntityDto {
+    private UUID id;
+    private UUID mediaTypeId;
 }

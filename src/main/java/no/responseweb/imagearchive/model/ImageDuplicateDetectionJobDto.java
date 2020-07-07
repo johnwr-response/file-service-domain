@@ -12,5 +12,6 @@ import java.util.UUID;
 @AllArgsConstructor
 @Builder
 public class ImageDuplicateDetectionJobDto {
-    private UUID fileStoreId;
+    private UUID fileItemIdQuery;
+    private UUID fileItemIdTarget;
 }
