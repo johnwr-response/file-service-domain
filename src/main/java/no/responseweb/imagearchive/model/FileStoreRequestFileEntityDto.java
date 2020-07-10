@@ -5,16 +5,11 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.UUID;
-
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class ImageDuplicateDetectionJobDto {
+public class FileStoreRequestFileEntityDto {
+    private FileStoreRequestTypeDto fileStoreRequestType;
     private FileItemDto fileItemDto;
-    @Deprecated
-    private UUID fileItemIdQuery;
-    @Deprecated
-    private UUID fileItemIdTarget;
 }
